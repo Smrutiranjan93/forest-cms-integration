@@ -1,0 +1,52 @@
+<section class="innbanner">
+  <div class="row">
+      <div class="col-md-12" >
+              <img src="assets/img/bannerImage/ACT.png">
+      </div>
+  </div>
+</section>
+
+
+<section style="margin-top:-60px">
+  <div class="container py-4">
+<!--    <div class="title"> <h2 class="text-center">Service Rules</h2> </div>-->
+    <div id="block-swfone-page-title" class="block-page-title-block">
+      <h3 class="sidebar"> Service Rules</h3>
+    </div>
+    <div class="h-100 d-flex align-items-center justify-content-center scroll-table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Sr. No.</th>
+            <th scope="col">Title</th>
+            <th scope="col">Details/Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of filelist3; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{data.title}}</td>
+            <td>
+             {{data.detailsDownload}}
+            </td>
+          </tr>
+          <!-- <tr>
+            <td>2</td>
+            <td>{{}}</td>
+            <td>
+              {{}}
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>{{}}</td>
+            <td>
+            {{}}
+            </td>
+          </tr> -->
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+  </div>
+</section>

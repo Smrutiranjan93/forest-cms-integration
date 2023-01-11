@@ -1,0 +1,103 @@
+<section class="innbanner" style="margin-top: 30px;padding: 42px 0;">
+  <img src="assets/img/banner.jpg">
+
+</section>
+
+<section style="margin-top:-10% ">
+  <div class="container py-4">
+    <div id="block-swfone-page-title" class="block-page-title-block">
+      <h3 class="sidebar">Noise Pollution</h3>
+    </div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div data-drupal-messages-fallback="" class="hidden"></div>
+      <div id="block-swfone-content" class="block block-system block-system-main-block">
+        <div class="content">
+          <div class="views-element-container">
+            <div
+              class="theme-two-table-caption js-view-dom-id-fc04a9e82a3267a0e85124defc782b79d433f75735511500b1846dfab193e851">
+              <div class="row">
+                <div class="col-md-3">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <form class="views-exposed-form" style="width: 347px;"
+                        data-drupal-selector="views-exposed-form-forest-department-scholarship-page-2"
+                        action="/act-rule/environment/environment-protection" method="get"
+                        id="views-exposed-form-forest-department-scholarship-page-2" accept-charset="UTF-8">
+                        <label>Environment Category</label>
+                        <div class="col-md-6 d-flex justify-content-between">                    
+                          <select  (change)="onCategorySelected1($event)">
+                            <option value="all" selected="selected" value="0">- Any -</option>
+                            <option *ngFor="let category of filelist" [value]="category.id">{{category.name}}</option>
+                          </select>   
+                                   
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="col-md-9">
+
+                  <div class="scroll-table1">
+                    <table class="table table-sm table-bordered">
+                      <thead>
+                        <caption>
+                          Rules
+                        </caption>
+                        <tr>
+                          <th scope="col">Sr. No.</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Details/Download</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-caption" *ngFor="let data of filelist1; let i = index">
+                          <td>{{data.id}}</td>
+                          <td>{{data.title}}</td>
+                          <td > <button  (click)="images($event)" [value]="data.file">Download{{data.file}} </button> </td>
+                            </tr>
+
+
+
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+                   
+                  </div>
+             
+              <!-- <button (click)="images($event)"> <a href="" target="_blank">Download</a> </button> -->
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--            </section>-->
+    <!--          </main>-->
+
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <!--  </div>-->
+  </div>
+</section>
+<div >
+  <table>
+     <ng-container *ngFor="let data of filelist1; let i = index">
+       <tr *ngFor="let datas of filelist1.imagesUpload1;">
+         <td>{{data.id}}aa</td>
+         <td>{{datas.id}}</td>
+       </tr>
+      </ng-container>
+  </table>
+</div>

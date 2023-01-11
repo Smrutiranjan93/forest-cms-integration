@@ -1,0 +1,462 @@
+<section class="innbanner">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="assets/img/bannerImage/Enviromente.png">
+    </div>
+  </div>
+</section>
+
+
+
+<!--<section class="innerpage-wrapper">-->
+<section style="margin-top:-75px">
+
+  <div class="container py-4">
+    <div id="block-swfone-page-title" class="block-page-title-block">
+      <h3 class="sidebar">Water Pollution</h3>
+    </div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div data-drupal-messages-fallback="" class="hidden"></div>
+      <div id="block-swfone-content" class="block block-system block-system-main-block">
+
+
+        <div class="content">
+          <div class="views-element-container">
+            <div
+              class="theme-two-table-caption js-view-dom-id-fc04a9e82a3267a0e85124defc782b79d433f75735511500b1846dfab193e851">
+
+
+
+              <div class="row">
+                <div class="col-md-3">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <form class="views-exposed-form" style="width: 347px;"
+                        data-drupal-selector="views-exposed-form-forest-department-scholarship-page-2"
+                        action="/act-rule/environment/environment-protection" method="get"
+                        id="views-exposed-form-forest-department-scholarship-page-2" accept-charset="UTF-8">
+                        <label>Pollution Category</label>
+                        <div class="col-md-6 d-flex justify-content-between">
+                          <select class="form-select" (change)="envp($event)">
+                            <option value="All" selected="selected">- Any -</option>
+                            <option [value]="data.id"  *ngFor="let data of envprotectdata">{{data.name}}</option>
+
+                          </select>
+                          <!-- <input type="submit" value="Apply" class="btn btn-sm btn-success"> -->
+                        </div>
+
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="col-md-9">
+                  <div class="scroll-table1">
+                    <table class="table table-sm table-bordered">
+                      <thead>
+                        <caption>
+                          Acts
+                        </caption>
+                        <tr>
+                          <th scope="col">Sr. No.</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Details/Download</th>
+                          <!-- <th scope="col">Details</th> -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let datass of envprotectdata1">
+                          <td>{{datass.id}}</td>
+                          <td>{{datass.title}}</td>
+                          <td>  <button (click)="images($event)" [value]="datass.file" >Download{{datass.file}} </button>  </td>
+                         
+                          <td>
+                            <!-- <a href="{{imagesUpload1}}" (click)="images($event)"  target="_blank">  Download{{datass.file}}</a> -->
+                            <!-- <button (click)="images($event)" [value]="datass.file">Download{{datass.file}} </button> -->
+                          </td>
+                          <!-- <td>  <img src="{{datass.file}}" alt="">{{datass.file}} </td> -->
+  
+                        </tr>
+                   
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+
+                  </div>
+               
+                  <!-- <div class="scroll-table1">
+                    <table class="table table-sm table-bordered">
+                      <thead>
+                        <caption>
+                          Rules
+                        </caption>
+                        <tr>
+                          <th scope="col">Sr. No.</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Details/Download</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-caption">
+                          <td>2</td>
+                          <td>The Central Pollution Control Board (Member-Secretary, Terms and Conditions of Service and
+                            Recruitment) Rules, 2012 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Rules%2C%201986_2.pdf"
+                                title="Click Here for More Details" target="_blank">Download(95.19 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Rules, 1986"
+                                  title="The Environment (Protection) Rules, 1986"></a></span></td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>2</td>
+                          <td>The Central Pollution Control Board (Qualifications and other Terms and Conditions of
+                            Service of Chairman) (Amendment) Rules, 2012 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Rules%2C%201986_2.pdf"
+                                title="Click Here for More Details" target="_blank">Download(95.19 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Rules, 1986"
+                                  title="The Environment (Protection) Rules, 1986"></a></span></td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>2</td>
+                          <td>The Water (Prevention and Control of Pollution) Amendment Rules, 2011 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Rules%2C%201986_2.pdf"
+                                title="Click Here for More Details" target="_blank">Download(95.19 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Rules, 1986"
+                                  title="The Environment (Protection) Rules, 1986"></a></span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+                  </div>
+                  <div class="scroll-table1">
+                    <table class="table table-sm table-bordered">
+                      <thead>
+                        <caption>
+                          Amendments
+                        </caption>
+                        <tr>
+                          <th scope="col">Sr. No.</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Details/Download</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-caption">
+                          <td>3</td>
+                          <td>Environment (Protection) 115 Amendment Rules, 2021</td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/Environment%20%28Protection%29%20115%20Amendment%20Rules%2C%202021.pdf"
+                                title="Click Here for More Details" target="_blank">Download(210.39 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="Environment (Protection) 115 Amendment Rules, 2021"
+                                  title="Environment (Protection) 115 Amendment Rules, 2021"></a></span></td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>4</td>
+                          <td>Environment (Protection) Amendment Rules, 2020</td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/Environment%20%28Protection%29%20Amendment%20Rules%2C%202020.pdf"
+                                title="Click Here for More Details" target="_blank">Download(1.39 MB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="Environment (Protection) Amendment Rules, 2020"
+                                  title="Environment (Protection) Amendment Rules, 2020"></a></span></td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>5 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2009 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202009.pdf"
+                                title="Click Here for More Details" target="_blank">Download(665.43 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2009"
+                                  title="The Environment (Protection) Amendment Rules, 2009"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>6 </td>
+                          <td>The Environment (Protection) Third Amendment Rules, 2008 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Third%20Amendment%20Rules%2C%202008.pdf"
+                                title="Click Here for More Details" target="_blank">Download(618.22 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Third Amendment Rules, 2008"
+                                  title="The Environment (Protection) Third Amendment Rules, 2008"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>7</td>
+                          <td>The Environment (Protection) Second Amendment Rules, 2008</td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Second%20Amendment%20Rules%2C%202008.pdf"
+                                title="Click Here for More Details" target="_blank">Download(167.01 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Second Amendment Rules, 2008"
+                                  title="The Environment (Protection) Second Amendment Rules, 2008"></a></span></td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>8</td>
+                          <td>The Environment (Protection) Amendment Rules, 2008 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202008.pdf"
+                                title="Click Here for More Details" target="_blank">Download(1.48 MB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2008"
+                                  title="The Environment (Protection) Amendment Rules, 2008"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>9</td>
+                          <td>The Environment (Protection) Second Amendment Rules, 2006 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Second%20Amendment%20Rules%2C%202006.pdf"
+                                title="Click Here for More Details" target="_blank">Download(32.81 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Second Amendment Rules, 2006"
+                                  title="The Environment (Protection) Second Amendment Rules, 2006"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>10 </td>
+                          <td>The Environment (Protection) First Amendment Rules, 2006 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20First%20Amendment%20Rules%2C%202006.pdf"
+                                title="Click Here for More Details" target="_blank">Download(55.16 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) First Amendment Rules, 2006"
+                                  title="The Environment (Protection) First Amendment Rules, 2006"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>11 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2006 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202006.pdf"
+                                title="Click Here for More Details" target="_blank">Download(61.36 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2006"
+                                  title="The Environment (Protection) Amendment Rules, 2006"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>12 </td>
+                          <td>The Environment (Protection) Third Amendment Rules, 2005 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Third%20Amendment%20Rules%2C%202005.pdf"
+                                title="Click Here for More Details" target="_blank">Download(58.48 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Third Amendment Rules, 2005"
+                                  title="The Environment (Protection) Third Amendment Rules, 2005"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>13 </td>
+                          <td>The Environment (Protection) Second Amendment Rules, 2005 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Second%20Amendment%20Rules%2C%202005.pdf"
+                                title="Click Here for More Details" target="_blank">Download(20.54 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Second Amendment Rules, 2005"
+                                  title="The Environment (Protection) Second Amendment Rules, 2005"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>14 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2005 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202005.pdf"
+                                title="Click Here for More Details" target="_blank">Download(18.54 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2005"
+                                  title="The Environment (Protection) Amendment Rules, 2005"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>15 </td>
+                          <td>The Environment (Protection) Second Amendment Rules, 2004 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Second%20Amendment%20Rules%2C%202004.pdf"
+                                title="Click Here for More Details" target="_blank">Download(12.42 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Second Amendment Rules, 2004"
+                                  title="The Environment (Protection) Second Amendment Rules, 2004"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>16 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2004 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202004.pdf"
+                                title="Click Here for More Details" target="_blank">Download(317.93 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2004"
+                                  title="The Environment (Protection) Amendment Rules, 2004"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>17 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2003 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202003.pdf"
+                                title="Click Here for More Details" target="_blank">Download(14.73 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2003"
+                                  title="The Environment (Protection) Amendment Rules, 2003"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>18 </td>
+                          <td>The Environment (Protection) Fourth Amendment Rules, 2002 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Fourth%20Amendment%20Rules%2C%202002.pdf"
+                                title="Click Here for More Details" target="_blank">Download(12.49 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Fourth Amendment Rules, 2002"
+                                  title="The Environment (Protection) Fourth Amendment Rules, 2002"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>19 </td>
+                          <td>The Environment (Protection) Third Amendment Rules, 2002 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Third%20Amendment%20Rules%2C%202002.pdf"
+                                title="Click Here for More Details" target="_blank">Download(21.35 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Third Amendment Rules, 2002"
+                                  title="The Environment (Protection) Third Amendment Rules, 2002"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>20 </td>
+                          <td>The Environment (Protection) Second Amendment Rules, 2002 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20second%20Amendment%20Rules%2C%202002.pdf"
+                                title="Click Here for More Details" target="_blank">Download(16.19 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Second Amendment Rules, 2002"
+                                  title="The Environment (Protection) Second Amendment Rules, 2002"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>21 </td>
+                          <td>The Environment (Protection) Amendment Rules, 2001 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20Amendment%20Rules%2C%202001.pdf"
+                                title="Click Here for More Details" target="_blank">Download(9.46 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) Amendment Rules, 2001"
+                                  title="The Environment (Protection) Amendment Rules, 2001"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                        <tr class="table-caption">
+                          <td>22 </td>
+                          <td>The Environment (Protection) (Second Amendment) Rules, 1998 </td>
+                          <td><span><a
+                                href="/sites/default/files/2022-03/The%20Environment%20%28Protection%29%20%28Second%20Amendment%29%20Rules%2C%201998_0.pdf"
+                                title="Click Here for More Details" target="_blank">Download(52.17 KB)<img
+                                  src="https://forest.odisha.gov.in/core/themes/classy/images/icons/application-pdf.png"
+                                  alt="The Environment (Protection) (Second Amendment) Rules, 1998"
+                                  title="The Environment (Protection) (Second Amendment) Rules, 1998"></a></span>
+
+
+
+
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+                  </div> -->
+
+                </div>
+              </div>
+          <div>
+            hh
+          </div>
+    
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- <div >
+  <a   >Download` </a>
+</div> -->

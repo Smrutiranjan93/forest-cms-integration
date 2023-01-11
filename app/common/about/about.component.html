@@ -1,0 +1,78 @@
+<section class="innbanner" style="margin-top: 30px;padding: 42px 0;">
+    <img src="assets/img/banner.jpg">
+
+</section>
+<section class="container" >
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12" >
+                                        <div class="card"  >
+                                            <img class="img-fluid" alt="images" src="{{deptlist?.file}}">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <!-- <img class="img-fluid" alt="100%x280" src="assets/img/about1.jpg"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <!-- <img class="img-fluid" alt="100%x280" src="assets/img/hero-bg.jpg"> -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" role="button" href="#carouselExampleIndicators2"
+                    data-slide="prev">
+                    <a class="carousel-control-prev-icon" aria-hidden="true"></a>
+                    <a class="visually-hidden">Previous</a>
+                </button>
+                <button class="carousel-control-next" role="button" href="#carouselExampleIndicators2"
+                    data-slide="next">
+                    <a class="carousel-control-next-icon" aria-hidden="true"></a>
+                    <a class="visually-hidden">Next</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-8"   >
+            <p class="content" [innerHtml]="deptlist?.content_1">
+              
+            </p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="content"  [innerHtml]="deptlist?.content_2">
+                
+            </p>
+            <!-- <p class="content">
+                As per the report of the Forest Survey of India using remote sensing techniques, the forest cover in the
+                State is 48,855 sq. kms of which 7,073 sq. kms is a very dense forest. The moderately dense forest
+                extends over 21,394 sq. kms while open forest is over 20,388 sq. kms. The forest cover in the State
+                constitutes 31.38% of the geographical area. Besides this, there exists tree cover outside the forest
+                over 2.85% of the geographical area of the State. Thus the forest and tree cover in the State is 34.23%
+                of the geographical area. The Department is constantly endeavoring to protect the forest area,
+                regenerate the degraded forests and create more forests and tree cover by way of afforestation.
+            </p> -->
+        </div>
+    </div>
+</section>

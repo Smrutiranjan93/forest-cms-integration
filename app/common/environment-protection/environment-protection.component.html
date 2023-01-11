@@ -1,0 +1,175 @@
+<section class="innbanner" style="margin-top: 30px;padding: 42px 0;">
+  <img src="assets/img/banner.jpg">
+
+</section>
+
+
+<!--<section class="innerpage-wrapper">-->
+<section style="margin-top:-10%">
+
+  <div class="container py-4">
+
+    <!--  <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">-->
+    <!--    <div id="sidebar-first" class="column content-left">-->
+    <!--      <aside class="section" role="complementary">-->
+    <!--        <div>-->
+    <!--          <nav role="navigation" aria-labelledby="block-forestdepartmentmenu-2-menu" id="block-forestdepartmentmenu-2" class="navmenu">-->
+
+    <!--            <h2 class="visually-hidden" id="block-forestdepartmentmenu-2-menu">Forest Department Sidebar Menu</h2>-->
+
+
+
+    <!--            <ul class="clearfix">-->
+    <!--              <li>-->
+    <!--                <span title="Forest">Forest</span>-->
+    <!--                <ul>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/forest/central-act-%26-rules" title="Central Acts &amp; Rules" data-drupal-link-system-path="node/51898">Central Acts &amp; Rules</a>-->
+    <!--                  </li>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/forest/state-act-%26-rules" title="State Acts &amp; Rules" data-drupal-link-system-path="node/51899">State Acts &amp; Rules</a>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+
+    <!--              </li>-->
+    <!--              <li>-->
+    <!--                <a href="/act-rule/wildlife" title="Wildlife" data-drupal-link-system-path="taxonomy/term/2398">Wildlife</a>-->
+    <!--              </li>-->
+    <!--              <li class="open">-->
+    <!--                <span title="Environment">Environment</span>-->
+    <!--                <ul>-->
+    <!--                  <li class="open">-->
+    <!--                    <a href="/act-rule/environment/environment-protection" title="Environment Protection" data-drupal-link-system-path="act-rule/environment/environment-protection" class="is-active">Environment Protection</a>-->
+    <!--                  </li>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/environment/water-pollution" title="Water Pollution" data-drupal-link-system-path="act-rule/environment/water-pollution">Water Pollution</a>-->
+    <!--                  </li>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/environment/air-pollution" title="Air Pollution" data-drupal-link-system-path="act-rule/environment/air-pollution">Air Pollution</a>-->
+    <!--                  </li>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/environment/noise-pollution" title="Noise Pollution" data-drupal-link-system-path="act-rule/environment/noise-pollution">Noise Pollution</a>-->
+    <!--                  </li>-->
+    <!--                  <li>-->
+    <!--                    <a href="/act-rule/environment/waste-management" title="Waste Management" data-drupal-link-system-path="act-rule/environment/waste-management">Waste Management</a>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+
+    <!--              </li>-->
+    <!--              <li>-->
+    <!--                <a href="/act-rule/service-rules" title="Service Rules" data-drupal-link-system-path="taxonomy/term/2397">Service Rules</a>-->
+    <!--              </li>-->
+    <!--            </ul>-->
+
+
+
+    <!--          </nav>-->
+
+    <!--        </div>-->
+    <!--      </aside>-->
+    <!--    </div>-->
+    <!--    <div class="container content-right">-->
+    <!--      <div id="skipCont"></div>-->
+    <!--      <div id="main" class="layout-main">-->
+    <!--        <div class="container p-0">-->
+
+    <!--          <main id="content" class="column main-content" role="main">-->
+    <!--            <section class="section">-->
+    <!--              <a id="main-content" tabindex="-1"></a>-->
+
+
+
+    <div id="block-swfone-page-title" class="block-page-title-block">
+      <h3 class="sidebar">Environment Protection</h3>
+    </div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div data-drupal-messages-fallback="" class="hidden"></div>
+      <div id="block-swfone-content" class="block block-system block-system-main-block">
+
+
+        <div class="content">
+          <div class="views-element-container">
+            <div
+              class="theme-two-table-caption js-view-dom-id-fc04a9e82a3267a0e85124defc782b79d433f75735511500b1846dfab193e851">
+
+
+
+              <div class="row">
+                <div class="col-md-3">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <form class="views-exposed-form" style="width: 347px;"
+                        data-drupal-selector="views-exposed-form-forest-department-scholarship-page-2"
+                        action="/act-rule/environment/environment-protection" method="get"
+                        id="views-exposed-form-forest-department-scholarship-page-2" accept-charset="UTF-8">
+                        <label>Environment Category</label>
+                        <div class="col-md-6 d-flex justify-content-between">
+                          <select class="form-select" (change)="envp($event)">
+                            <option value="All" selected="selected" value="0">- Any -</option>
+                            <option *ngFor="let datas of envprotectdata" [value]="datas.id"  >{{datas.name}}</option>
+                          
+                          </select>
+                          <!-- <input type="submit" value="Apply" class="btn btn-sm btn-success"> -->
+                        </div>
+
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <!--                      <div class="guide-text">Swipe to view <i class="fa fa-long-arrow-right"></i></div>-->
+                <div class="col-md-9">
+                  <div class="scroll-table1">
+                    <!--                        <table class="views-table sortable views-view-table cols-3">-->
+                    <table class="table table-sm table-bordered">
+                      <thead >  
+                        <caption >
+                         
+                        </caption>
+                        <tr>
+                          <th scope="col">Sr. No.</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Details/Download</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let datass of envprotectdata1">
+                          <td>{{datass.id}}</td>
+                          <td>{{datass.title}}</td>
+                          <td>{{datass.file}}</td>
+                          <td>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+                  </div>
+                  <!--                      <div class="guide-text">Swipe to view <i class="fa fa-long-arrow-right"></i></div>-->
+                
+
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--            </section>-->
+    <!--          </main>-->
+
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <!--  </div>-->
+  </div>
+</section>

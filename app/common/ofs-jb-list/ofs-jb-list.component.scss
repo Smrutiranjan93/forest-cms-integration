@@ -1,0 +1,23 @@
+.innbanner  img{
+  height: 370px;
+  position: relative;
+  /* background-size: cover; */
+  background-position: bottom center;
+  /* background-attachment: fixed; */
+  background-attachment: initial;
+  background-size: 100% 100%;
+  width: 100%;
+  background: linear-gradient(to left, #76a2db, #f8e15b);
+}
+thead tr{
+  background: linear-gradient(110deg,#589d6b, #0F4229 );
+  color: #fff;
+}
+.sidebar {
+  background: rgb(203, 209, 206);
+  border-left: 4px solid #21b93f;
+  padding-left: 4px;
+  color: #fff;
+  font-family: auto;
+
+}

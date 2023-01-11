@@ -1,0 +1,109 @@
+  
+  <section class="innbanner" style="margin-top: 80px;" >
+    <img src="/assets/image/notification.jpeg" style="width:100% ; "> 
+   
+   </section>
+   <nav aria-label="" style="margin-top:-60px" >
+    <ol class="breadcrumb" style="font-weight:bolder;font-size: 22px;">
+      <li class="breadcrumb-item" style="border: 10px;"><a routerLink="/bhadrakreport" >Bhadrak</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Chandakareport">Chandaka</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Chillikareport">Chillika</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Cityreport">City</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Khurdhareport">Khurdha</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Mangrovereport">Mangrove</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Nayagarhreport">Nayagarh</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Purireport">Puri</a></li>
+      <!-- <li class="breadcrumb-item active" aria-current="page">Chillika</li> -->
+      
+    </ol>
+  </nav>
+<div class="container-fluid mt-3">
+    
+     
+      <div class="col-xxl-10 col-xl-10 col-lg- col-md-9 col-sm-9 col-12 ">
+       <h3>Tenders & Advertisements(Bhadarak)</h3>
+       <hr>
+       <div style="padding:0px 10px ; " >
+        <button type="button" class="btn btn-warning mx-2">Tenders</button>
+        <button type="button" class="btn btn-secondary mx-2">Adevertisements</button>
+        <button type="button" class="btn btn-secondary">Quotations</button>
+       </div>
+       <hr>
+       <!-- <div class="container"> -->
+        <div class="container-fluid  table2" style="text-align:center; background-color: #e3dfd2;; align-items: center; padding: 20px 96px; border: 2px solid #161101; width: fit-content;;">
+          <!-- col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 -->
+          <!-- display:flex ;  -->
+          <div class="mx-2 ">
+          Tender Number <br>
+          <input class="" type="search"  autocomplete="off"  style="width:185px ;">
+          <!-- form-control -->
+          <!-- [(ngModel)]="searchtext" -->
+         </div>
+         <div  class="mx-2 ">
+          Start Date <br>
+          <input type="date" name="" id="" style="width:185px ;">
+         </div>
+         <div  class="mx-2 ">
+          End Date <br>
+          <input type="date" name="" id="" style="width:185px ;">
+         </div>
+         <!-- <div  class="mx-2 ">
+          Department <br>
+          
+          <select name="" id="" style="width:185px ;">
+            <option value="any">any</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+         </div> -->
+         <!-- <div  class="mx-2 ">
+         Office  List <br>
+         <select name="" id="" style="width:185px ;">
+          <option value="any">any</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+         </div> -->
+         <div class="mx-2 ">
+           <button type="button" class="btn btn-success mt-3 " style="align-items: center; padding: 7px 30px;background-color: green;">Apply</button>
+          </div>
+
+        </div>
+       
+       
+      <div class="container-fluid mt-5">
+        <table class="table  table-hover table-bordered text-center">
+          <thead>
+            <tr>					
+              <th scope="col">Sr. no</th>
+              <th scope="col">Title</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Tender Numer</th>
+              <th scope="col">Department</th>
+              <th scope="col">Details/Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr *ngFor="let item of collection | paginate:{itemsPerPage: 10, currentPage:p} | filter:searchtext">					
+              <td>{{item.Srno}}</td>					
+              <td>{{item.Title}}</td>
+              <td>{{item.StartDate}}</td>					
+              <td>{{item.EndDate}}</td>					
+              <td>{{item.TenderNumer}}</td>					
+              <td>{{item.Department}}</td>					
+              <td>{{item.Download}}</td>					
+            </tr>			 -->
+          </tbody>
+        </table>   
+        <!-- <div id="pagination">
+          <pagination-controls (pageChange)="p=$event"></pagination-controls>
+        </div>   -->
+      </div>
+      </div>
+    <!-- </div> -->
+</div>

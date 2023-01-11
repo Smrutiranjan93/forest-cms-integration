@@ -1,0 +1,733 @@
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+  <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+    <div class="align-items-center d-none d-md-flex">
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logoheader.png" alt=""></a>
+      <a class="logoo me-auto">
+        <h4>Bhubaneswar Circle,Forest Department
+          <br>
+          <h6>Government of Odisha</h6>
+        </h4>
+      </a><br>
+</div>
+    <div class="d-flex align-items-center">
+      <button type="button" class="btn btn-outline-secondary btn-rounded">
+        <a class="font-button plus" style="color: white;" id="plusBtn" onclick="plus()">A+</a>
+      </button>&nbsp;
+      <button type="button" class="btn btn-outline-secondary btn-rounded">
+        <a class="font-button plus" style="color: white;" id="defaultBtn" onclick="normal()">A</a>
+      </button>&nbsp;
+      <button type="button" class="btn btn-outline-secondary btn-rounded">
+        <a class="font-button plus" style="color: white;" id="minusBtn" onclick="minus()">A-</a>
+      </button>&nbsp;&nbsp;
+      <button style="padding: 2px; height:30px">
+        <div id="google_translate_element"></div>
+      </button>
+      <a routerLink="/login" class="btn btn-warning" style="margin-left:10px ;">Login </a>
+
+      <!-- <div class="dropdown">
+          <button class="btn btn-outline-secondary btn-rounded dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Language
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" routerLink="/career">English</a>
+            <a class="dropdown-item" routerLink="/career">Hindi</a>
+          </div>
+        </div> -->
+
+
+    </div>
+
+  </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_navbar">
+      <div class="">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                    About Department
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://forest.odisha.gov.in/about-us/about-department" target="_blank">State</a></li>
+                    <li><a class="dropdown-item" routerLink="/aboutus">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Organization structure
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://forest.odisha.gov.in/about-us/organization-structure" target="_blank">State</a></li>
+                    <li><a class="dropdown-item" routerLink="organogram">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+               
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Who's Who
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" routerLink="/webdirectory" role="button" data-bs-toggle="dropdown">
+                        Web Directory
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/bhadrakwebdirectory">DFO,Bhadrak(WL)</a></li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Mangrovewebdirectory">DFO,Mangrove Forest Division(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Puriwebdirectory">DFO,Puri(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Chandakawebdirectory">DFO,Chandaka(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Chillikawebdirectory">DFO,Chillika(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Khurdhawebdirectory">DFO,Khurdha(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Nayagarhwebdirectory">DFO,Nayagarh(WL)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/Citywebdirectory">DFO,City Forest(WL)</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    List Of Officers
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        State Officer and division officer
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/disposition">Disposition of Forest Rangers
+                          </a></li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/ofs-jb-list">OFS JB Lists</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/ofs-sb-list">OFS SB Lists</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/ofdc">OFDC</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/rccf">RCCF</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/dfo">DFO</a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a class="dropdown-item" href="#">Graduation List</a>
+                </li> -->
+
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Report
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Finance
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Estabilshment
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Lease
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+               
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Offence
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Weekly
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Monthly
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Fortnightly
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Half Yearly
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Annual
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                        <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+                      </ul>
+                    </li>
+
+
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Eco Tourism
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                legal clearance
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Land Clearance
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="legal-clearance">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Forest Clearance
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="forest-clearance">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Wildlife Clearance
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="wildlife-clearance">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+               
+                <li>
+                  <a class="dropdown-item" href="others-clearance">Others</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Forest Notifications/Orders
+              </a>
+              <ul class="dropdown-menu">
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Forest Orders
+                  </a>
+                  <ul class="dropdown-menu">
+
+                   <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                        Forest
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/forest">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                        Environment
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/environment-forest">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Estabilshment
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/establishment">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Wildlife
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/wildlifeforest">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                   
+                    <li><a class="dropdown-item" href="forest-other">Others</a></li>
+
+
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Forest Notifications
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                        Forest
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/forest-notification">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                        Environment
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/environment-notification">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Establishment
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/establishment-notification">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Wildlife
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="/wildlife-notification">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="notify-other">Others</a></li>
+
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Acts & Rules
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Forest
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Central acts & rules</a></li>
+                    <li><a class="dropdown-item" href="#">State acts & rules</a></li>
+
+
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown">
+                    Wildlife
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Environment
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Environment Protection
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="environment-protection">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" routerLink="water-pollution" role="button" data-bs-toggle="dropdown">
+                        Water Pollution
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="water-pollution">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                        Air Pollution
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="air-pollution">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Noise Pollution
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="noise-pollution">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                        Waste Management
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="#">State</a></li>
+                        <li><a class="dropdown-item" routerLink="waste-management">Division</a></li>
+  
+                        <li>
+                        </ul>
+                    </li>
+                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                    Service Rules
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="service-rules">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/rti" role="button" data-bs-toggle="dropdown">
+                RTI
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item"href="https://forest.odisha.gov.in/rti">State</a></li>
+                <li><a class="dropdown-item"  routerLink="/rti">Division</a></li>
+
+              </ul>
+            </li>
+
+           
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Media Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="photos" role="button" data-bs-toggle="dropdown">
+                    Photo Gallery
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" routerLink="service-rules" role="button" data-bs-toggle="dropdown">
+                    Video Gallery
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/rti" role="button" data-bs-toggle="dropdown">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Bhadrak(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Mangrove Forest Division(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Puri(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chandaka(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Chillika(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Khurdha(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,Nayagarh(WL)</a></li>
+                <li><a class="dropdown-item" routerLink="/Bhadrakreports">DFO,City Forest(WL)</a></li>
+
+
+              </ul>
+            </li>
+
+
+
+           
+
+          
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="https://forest.odisha.gov.in/more/achievements" role="button" data-bs-toggle="dropdown">
+                    Achievements
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Adevertisements
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Schemes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="#">State</a></li>
+                    <li><a class="dropdown-item" routerLink="#">Division</a></li>
+
+                    <li>
+                    </ul>
+                </li>
+                
+               
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Important Links</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <a routerLink="/Grievance" class="appointment-btn">GRIEVANCE</a>
+
+  </div>
+</header>
+<!-- End Header -->
+<!-- End Header -->

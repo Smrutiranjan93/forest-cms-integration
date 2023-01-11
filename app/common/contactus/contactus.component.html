@@ -1,0 +1,72 @@
+<section class="innbanner" style="margin-top:-60px ;">
+    <img src="assets/img/contact.jpg"> 
+   </section>
+  <section id="contact" class="contact" style="margin-top: -120px; text-align: justify;">
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p> A-84, Kharavela Nagar Bhubaneswar - 751001, Odisha, India
+                    Phone: 0674 2534086, 2534269 </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h2>Email Us</h2>
+                <p>info@ofdc.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h2>Call Us</h2>
+                <p>0674 2534086</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+            <form [formGroup]="contactForm"(ngSubmit)="save()" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate" class="php-email-form" style="height: 100%;">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" formControlName="name" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                    <p class="help-block text-danger"></p>
+                 </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" formControlName="email"  id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                    <p class="help-block text-danger"></p>  
+                </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" formControlName="mobile"  id="subject" placeholder="Mobile" required="required" data-validation-required-message="Please enter a subject" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" id="message" formControlName="message"  placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                    <p class="help-block text-danger"></p> 
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div>
+                </div>
+                <div class="text-center"><button type="submit">Submit  </button></div>
+              </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>

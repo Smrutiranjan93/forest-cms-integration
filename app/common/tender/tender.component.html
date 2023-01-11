@@ -1,0 +1,80 @@
+
+
+              
+              <section style="margin-top:120px ;">
+                <marquee behavior="scroll" direction="left" style="background-color: black;">
+                  <a style="color: rgb(6, 6, 5);font-size: 22px; background-color: rgb(244, 222, 57);"><b>Notice : <i>This website is
+                        under Beta testing and hence no sensitive
+                        information
+                        should be entered and hence actual Citizen queries should not be posted. We will notify when the website
+                        is
+                        available for public usage.</i> </b></a>
+                </marquee>
+                
+              </section>
+              <section id="appointment" class="appointment section-bg" style="margin-top: -60px;">
+                <div class="container" data-aos="fade-up">
+                  <div class="card">
+                <!-- <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">Tender Upload Form</h3> -->
+                  <form [formGroup]="tenderForm" (ngSubmit)="tenderUpload()"  method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row">
+                      <div class="col-md-8 form-group">
+                        <input type="text" class="form-control" formControlName="title" name="title" id="name" placeholder="Enter Title" required="required" data-validation-required-message="Please enter your name">
+                        <p class="help-block text-danger"></p>       
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-8 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" formControlName="issuingAuthority" id="email" placeholder="Issuing Authority" required="required" data-validation-required-message="Please enter your email" name="issuingAuthority" >
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-8 form-group mt-3 mt-md-0">
+                        <input type="date" id="End Date" class="form-control" formControlName="endDate" name="endDate">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8 form-group mt-3 mt-md-0">
+                          <input type="file"  class="form-control" formControlName="file" (change)="onFileSelected($event)" id="myfile" name="myfile">
+                           <p class="help-block text-danger"></p>
+                        </div>
+                        </div>
+              
+                    <!-- <div class="row">
+                      <div class="col-md-4 form-group mt-3">
+                        <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+                      </div>
+                      <div class="col-md-4 form-group mt-3">
+                        <select name="department" id="department" class="form-select">
+                          <option value="">Select Department</option>
+                          <option value="Department 1">Department 1</option>
+                          <option value="Department 2">Department 2</option>
+                          <option value="Department 3">Department 3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 form-group mt-3">
+                        <select name="doctor" id="doctor" class="form-select">
+                          <option value="">Select Doctor</option>
+                          <option value="Doctor 1">Doctor 1</option>
+                          <option value="Doctor 2">Doctor 2</option>
+                          <option value="Doctor 3">Doctor 3</option>
+                        </select>
+                      </div>
+                    </div> -->
+              
+                    <!-- <div class="form-group mt-3">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                    </div> -->
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Upload Tender</button></div>
+                  </form>
+                </div>
+              
+                </div>
+              </section>
